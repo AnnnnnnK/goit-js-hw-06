@@ -1,13 +1,5 @@
-
-
-
-// console.log(btn);
-
 const decrementBtn = document.querySelector('button[data-action = "decrement"]');
 const incrementBtn = document.querySelector('button[data-action = "increment"]');
-
-console.log(decrementBtn);
-console.log(incrementBtn);
 
 const counter = document.querySelector('#value');
 

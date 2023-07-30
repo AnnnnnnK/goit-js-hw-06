@@ -4,10 +4,13 @@ console.log(input);
 const output = document.querySelector('#name-output');
 console.log(output);
 
-// let value = input.value;
 
 input.addEventListener('input', handlerInput);
 
-function handlerInput(){
-    output.textContent = input.value;
+function handlerInput(evt){
+  output.textContent = evt.currentTarget.value.trim();
+  if(evt.currentTarget.value.trim() === '') {
+    output.textContent = 'Anonymous';
+  }
 }
+

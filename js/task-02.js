@@ -8,7 +8,7 @@ const ingredients = [
 ];
 
 const list = document.querySelector('#ingredients');
-// console.log(list);
+
 
 function createMarkup(arr) {
  const markup = arr.map((elem) => {
@@ -20,5 +20,5 @@ function createMarkup(arr) {
   })
 list.append(...markup);
 }
-// console.log(list);
+
 createMarkup(ingredients);
